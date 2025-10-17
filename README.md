@@ -15,23 +15,6 @@ It is built with simplicity in mind, making it beginner-friendly yet extensible 
 
 ---
 
-## 📋 Table of Contents
-
-1. [Overview](#overview)
-2. [Features](#features)
-3. [Repository Structure](#repository-structure)
-4. [Dependencies / Requirements](#dependencies--requirements)
-5. [Installation](#installation)
-6. [Usage](#usage)
-7. [Example Output](#example-output)
-8. [Data](#data)
-9. [Future Enhancements](#future-enhancements)
-10. [Contributing](#contributing)
-11. [License](#license)
-12. [Contact](#contact)
-
----
-
 ## 🧐 Overview
 
 This project provides a workflow for analyzing textual datasets stored in CSV format.  
@@ -139,16 +122,20 @@ scikit-learn
 
 ---
 
-## 📊 Example Output
+## 🌐 Live Demo
 
-After running the script, you can expect visualizations like:
-- Bar charts showing top frequent words  
-- Word clouds highlighting most-used terms  
-- Distribution plots of text length or sentiment (if added later)
+You can try out the live Streamlit application here:
 
-*(You can include screenshots here if you add output images later.)*
+👉 **[Text Analysis Using Python - Streamlit App](https://s5rngy5cqgen9wjcnoqs7g.streamlit.app/)**
 
----
+This hosted app allows users to:
+- Upload their own text data or use sample text  
+- View real-time word frequency charts and text statistics  
+- Visualize key textual insights through interactive graphs  
+- Explore the power of Python NLP and visualization tools directly in the browser  
+
+No setup needed — just open the link and start analyzing!
+
 
 ## 🧩 Data
 
@@ -191,7 +178,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ## 📬 Contact
 
 👤 **Author:** Laxmidhar Penta  
-📧 Email: (add your email here if you’d like)  
+📧 Email: laxmidharpenta@gmail.com 
 🔗 GitHub: [LaxmidharPenta](https://github.com/LaxmidharPenta)
 
 ---
