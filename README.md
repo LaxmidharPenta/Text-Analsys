@@ -1,46 +1,58 @@
-# 🧠 Text Analysis Using Python
+# 🧠 Text Analysis Using Python (Streamlit)
 
 ### 📘 Project Description
-**Text Analysis Using Python** is a Natural Language Processing (NLP) project that demonstrates how to process, analyze, and visualize textual data effectively using Python.  
-The main objective of this project is to transform raw text data into meaningful insights by applying techniques such as tokenization, word frequency analysis, and data visualization.
+**Text Analysis Using Python (Streamlit)** is an interactive Natural Language Processing (NLP) project that allows users to process, analyze, and visualize textual data directly in the browser.  
+The main goal of this project is to turn raw text data into meaningful insights using Python libraries like **pandas**, **NLTK**, **matplotlib**, and **wordcloud**, and present results interactively via **Streamlit**.
 
-This project can be used as a foundation for more advanced NLP applications like:
-- Sentiment analysis  
-- Topic modeling  
-- Named entity recognition (NER)  
-- Keyword extraction  
-- Text summarization  
-
-It is built with simplicity in mind, making it beginner-friendly yet extensible for more complex use cases.
+This project is suitable for:
+- Word frequency analysis  
+- Text preprocessing and cleaning  
+- Visualizing text data (bar charts, word clouds)  
+- Learning and experimenting with Python NLP and interactive dashboards  
 
 ---
 
+## 🌐 Live Demo
+
+Try the app online here:  
+👉 **[Text Analysis Using Python - Streamlit App](https://s5rngy5cqgen9wjcnoqs7g.streamlit.app/)**
+
+Features of the live app:
+- Upload your own CSV with textual data  
+- Explore word frequency charts and distributions  
+- Generate interactive visualizations with minimal setup  
+
+No installation required — just open the link and start analyzing text!  
+
+
+
 ## 🧐 Overview
 
-This project provides a workflow for analyzing textual datasets stored in CSV format.  
-The script `graph.py` loads text data from `data.csv`, processes it (tokenization, cleaning, etc.), and visualizes patterns using charts and graphs.
+This project provides a workflow to analyze textual datasets in CSV format.  
+The script `graph.py` and the Streamlit app load and process text, generate word frequency distributions, and visualize patterns through interactive charts.  
 
-It’s useful for:
-- Understanding common words and themes in text data  
-- Performing exploratory text data analysis (EDA)  
-- Visualizing textual patterns (like word frequency, length distribution, etc.)  
+Use it to:
+- Understand common words and themes in text  
+- Perform exploratory text data analysis (EDA)  
+- Visualize textual patterns in an interactive manner  
 
 ---
 
 ## ✨ Features
 
-✅ Text cleaning and preprocessing (remove punctuation, lowercasing, etc.)  
-✅ Word frequency analysis and visualization  
-✅ Easy-to-customize Python script (`graph.py`)  
-✅ CSV-based dataset (`data.csv`) for demonstration  
-✅ Modular structure — can be extended for more NLP tasks  
+✅ Text preprocessing (lowercase, punctuation removal, stopwords removal)  
+✅ Word frequency analysis  
+✅ Visualizations: bar charts, word clouds  
+✅ Modular Python code (`graph.py`)  
+✅ Streamlit interactive dashboard  
+✅ Easy-to-extend for more NLP tasks  
 
 ---
 
 ## 📁 Repository Structure
 
 ```
-Text-Analsys/
+Text-Analysis-Using-Python-Streamlit/
 │
 ├── data.csv              # Sample text dataset
 ├── graph.py              # Script for text visualization and analysis
@@ -53,7 +65,7 @@ Text-Analsys/
 
 ## 🧰 Dependencies / Requirements
 
-Make sure the following packages are installed (already listed in `requirements.txt`):
+Python packages (listed in `requirements.txt`):
 
 ```
 numpy
@@ -62,125 +74,113 @@ matplotlib
 nltk
 wordcloud
 scikit-learn
+streamlit
 ```
 
-> 🐍 **Python Version:** 3.8 or later is recommended.
+> 🐍 Python 3.8+ recommended  
 
 ---
 
 ## ⚙️ Installation
 
-1. **Clone this repository**
-   ```bash
-   git clone https://github.com/LaxmidharPenta/Text-Analsys.git
-   cd Text-Analsys
-   ```
+1. **Clone the repository**
+```bash
+git clone https://github.com/LaxmidharPenta/Text-Analysis-Using-Python-Streamlit.git
+cd Text-Analysis-Using-Python-Streamlit
+```
 
 2. **Create a virtual environment (recommended)**
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate     # (Windows)
-   # or
-   source venv/bin/activate  # (Linux/Mac)
-   ```
+```bash
+python -m venv venv
+venv\Scripts\activate     # Windows
+# or
+source venv/bin/activate  # Linux/Mac
+```
 
 3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 
-4. **(Optional)** If using NLTK, download necessary datasets:
-   ```python
-   import nltk
-   nltk.download('punkt')
-   nltk.download('stopwords')
-   ```
+4. **Optional:** Download NLTK resources
+```python
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+```
 
 ---
 
 ## ▶️ Usage
 
-1. Place your text data in the `data.csv` file.  
-   The file should have at least one column containing text entries (e.g., `Text`, `Review`, etc.).
+### Run Python script locally
+```bash
+python graph.py
+```
 
-2. Run the main script:
-   ```bash
-   python graph.py
-   ```
+### Run Streamlit app locally
+```bash
+streamlit run graph.py
+```
 
-3. The script will:
-   - Load and process the text data  
-   - Generate word frequency distributions  
-   - Create visual graphs and charts  
-
-4. Example (inside a Python script):
-   ```python
-   from graph import analyze_text
-
-   analyze_text("data.csv")
-   ```
+**Features:**
+- Load text data (`data.csv` or your own CSV)  
+- Generate word frequency distributions  
+- Create interactive visualizations  
 
 ---
 
-## 🌐 Live Demo
+## 📊 Example Output
 
-You can try out the live Streamlit application here:
+- Bar charts of top frequent words  
+- Word clouds of the most used terms  
+- Distribution plots of text length  
 
-👉 **[Text Analysis Using Python - Streamlit App](https://s5rngy5cqgen9wjcnoqs7g.streamlit.app/)**
+*(You can include screenshots here if desired.)*
 
-This hosted app allows users to:
-- Upload their own text data or use sample text  
-- View real-time word frequency charts and text statistics  
-- Visualize key textual insights through interactive graphs  
-- Explore the power of Python NLP and visualization tools directly in the browser  
-
-No setup needed — just open the link and start analyzing!
-
+---
 
 ## 🧩 Data
 
 - **File:** `data.csv`  
-- **Description:** Contains text samples used for analysis.  
-- Each row typically includes one text entry (e.g., product review, sentence, or paragraph).  
-- You can replace it with your own dataset for custom analysis.
+- **Description:** Contains sample text entries (one text per row).  
+- Users can replace it with their own dataset for custom analysis.  
 
 ---
 
 ## 🚀 Future Enhancements
 
-Planned improvements:
-- Add sentiment analysis using TextBlob or VADER  
-- Add Named Entity Recognition (NER) using spaCy  
-- Implement topic modeling using LDA  
-- Interactive visual dashboards using Streamlit  
+- Sentiment analysis (TextBlob, VADER)  
+- Named Entity Recognition (NER) with spaCy  
+- Topic modeling using LDA  
+- Interactive dashboards and filters in Streamlit  
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! To contribute:
-1. Fork this repository  
-2. Create a new branch (`feature/new-feature`)  
-3. Commit your changes  
-4. Push to your fork  
+1. Fork the repository  
+2. Create a branch: `git checkout -b feature/YourFeature`  
+3. Make changes and commit: `git commit -m "Add feature XYZ"`  
+4. Push your branch: `git push origin feature/YourFeature`  
 5. Open a Pull Request  
 
-Please follow standard Python style and add docstrings for clarity.
+Follow Python style conventions and include docstrings.
 
 ---
 
 ## 📜 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+MIT License — see [LICENSE](LICENSE) file for details.
 
 ---
 
 ## 📬 Contact
 
 👤 **Author:** Laxmidhar Penta  
-📧 Email: laxmidharpenta@gmail.com 
-🔗 GitHub: [LaxmidharPenta](https://github.com/LaxmidharPenta)
+🔗 GitHub: [LaxmidharPenta](https://github.com/LaxmidharPenta)  
+📧 Email: *(laxmidharpenta@gmail.com)*
 
 ---
 
-> 💡 *If you found this project useful, don’t forget to ⭐ star the repository and share your feedback!*
+> 💡 *If you find this project useful, please ⭐ star the repository and share feedback!*
